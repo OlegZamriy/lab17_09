@@ -2,9 +2,22 @@ number1 = float(input("Введіть перше число: "))
 
 number2 = float(input("Введіть друге число: "))
 
-if number1 < number2:
-    min_number = number1
-else:
-    min_number = number2
+operation = input("Виберіть операцію (+, -, *, /): ")
 
-print(f"Мінімальне число: {min_number}")
+if operation == "+":
+    result = number1 + number2
+    print(f"Сума: {result}")
+elif operation == "-":
+    result = number1 - number2
+    print(f"Різниця: {result}")
+elif operation == "*":
+    result = number1 * number2
+    print(f"Добуток: {result}")
+elif operation == "/":
+    if number2 != 0:
+        result = number1 / number2
+        print(f"Частка: {result}")
+    else:
+        print("Помилка: Ділення на нуль неможливе")
+else:
+    print("Помилка: Невідома операція")
