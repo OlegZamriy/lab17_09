@@ -1,6 +1,10 @@
-number = int(input("Введіть число: "))
+number1 = float(input("Введіть перше число: "))
 
-if number % 7 == 0:
-    print(f"{number} - Number is a multiple of 7")
+number2 = float(input("Введіть друге число: "))
+
+if number1 > number2:
+    max_number = number1
 else:
-    print(f"{number} - Number is not a multiple of 7")
+    max_number = number2
+
+print(f"Максимальне число: {max_number}")
